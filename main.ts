@@ -54,6 +54,7 @@ function turnOffAll () {
     pins.digitalWritePin(DigitalPin.P16, 0)
 }
 let Step = 0
+pins.setPull(DigitalPin.P5, PinPullMode.PullDown)
 Step = 0
 turnOffAll()
 basic.forever(function () {
