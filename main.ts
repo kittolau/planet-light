@@ -55,8 +55,8 @@ function turnOffAll () {
 }
 let Step = 0
 pins.setPull(DigitalPin.P5, PinPullMode.PullDown)
-Step = 0
-turnOffAll()
+turnOnAll()
+Step = 10
 basic.forever(function () {
     basic.showNumber(Step)
 })
